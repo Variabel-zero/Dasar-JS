@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Kalkulator</title>
+</head>
+<body>
+	<form method="POST" name="kirim">
+		Bil 1 : <input type="text" name="T1">
+		Bil 2 : <input type="text" name="T2">
+		<button type="button" onclick="hitung(1)">+</button>
+		<button type="button" onclick="hitung(2)">-</button>
+		<button type="button" onclick="hitung(3)">x</button>
+		<button type="button" onclick="hitung(4)">/</button>
+		Hasil : <input type="text" name="hasil">
+	</form>
+	<script>
+		function hitung(nilai)
+		{
+			var bil1 = parseInt(document.kirim.T1.value)
+			var bil2 = parseInt(document.kirim.T2.value)
+
+			switch(nilai)
+			{
+				case 1 :
+					
+					document.kirim.hasil.value=(bil1+bil2)
+					break;
+				case 2:
+					document.kirim.hasil.value=(bil1-bil2)
+					break;
+				case 3 :
+					document.kirim.hasil.value=(bil1*bil2)
+					break;
+				case 4 :
+					document.kirim.hasil.value=(bil1/bil2)
+					break;
+				default:
+					document.write("error");
+			}
+		}
+	</script>
+</body>
+</html>

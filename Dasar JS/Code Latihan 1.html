@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Latihan 1</title>
+</head>
+<body>
+	<form method="POST" name="tes">
+		Bil1 : <input type="text" name="T1">
+		Nilai : <input type="text" name="T2">
+		<button type="button" onclick="hitung()">Cek</button>
+	</form>
+
+	<script>
+		function hitung()
+		{
+			var bil = document.tes.T1.value
+			if((bil >= 81) && (bil<=100))
+			{
+				document.tes.T2.value = "A"
+			}
+			else if((bil >=71) && (bil<=80))
+			{
+				document.tes.T2.value = "AB"
+			}
+			else if((bil >=66) && (bil<=70))
+			{
+				document.tes.T2.value = "B"
+			}
+			else if((bil >=61) && (bil<=65))
+			{
+				document.tes.T2.value = "BC"
+			}
+			else if((bil >=56) && (bil<=60))
+			{
+				document.tes.T2.value = "C"
+			}
+			else if((bil >=41) && (bil<=55))
+			{
+				document.tes.T2.value = "D"
+			}
+			else if((bil >=0) && (bil<=40))
+			{
+				document.tes.T2.value = "E"
+			}
+			else
+			{
+				document.tes.T2.value ="Nilai error"
+			}
+		}
+	</script>
+</body>
+</html>

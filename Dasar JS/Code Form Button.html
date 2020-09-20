@@ -1,0 +1,26 @@
+	<title>Form Input</title>
+</head>
+<body>
+	<h1>Tes</h1>
+	<button onclick="bg('GREEN')">Background Hijau</button>
+	<button onclick="bg('WHITE')">Background Putih</button>
+	<button onclick="fg('YELLOW')">Text Kuning</button>
+	<button onclick="fg('BLUE')">Text Biru</button>
+
+
+	<script >
+		
+		function bg(warna)
+		{
+			document.bgColor = warna
+		}
+
+		function fg(warna)
+		{
+			document.fgColor = warna
+		}
+
+		document.write('Dimodifikasi terakhir pada'+document.lastModified);
+	</script>
+</body>
+</html>
